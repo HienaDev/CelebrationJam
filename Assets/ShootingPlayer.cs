@@ -29,7 +29,7 @@ public class ShootingPlayer : MonoBehaviour
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        Vector2 direction = mousePos - (Vector2)transform.position;
+        Vector2 direction = mousePos - (Vector2)firePoint.transform.position;
 
         GameObject bullTemp = Instantiate(bullet);
 
